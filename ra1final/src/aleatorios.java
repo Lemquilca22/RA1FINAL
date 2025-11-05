@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class aleatorios {
     public static void main (String[] args) {
-        //Simulador de dados
+        //Numeros aleatorios
         Scanner sc = new Scanner(System.in);
         Random generador = new Random();
         System.out.println("Bienvenido al generador de Números aleatorios");
