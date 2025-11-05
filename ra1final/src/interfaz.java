@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -103,10 +104,19 @@ public class interfaz {
                     //Classifica el numero como primo o no
                     break;
 
-                case 4:
+                case 4: //SALUDO PERSONALIZADO HUGOAT
+                    String nombre = sc.nextLine(); //Lee el nombre introducido por el usuario
+                    System.out.println("¡Hola " + nombre + " !");
                     break;
 
-                case 5:
+                case 5: //CALCULAR EDAD CARLOS
+                    System.out.print("Ingrese su año de nacimiento: ");
+                    int anioNacimiento = sc.nextInt();
+
+                    int anioActual = LocalDate.now().getYear();
+                    int edad = anioActual - anioNacimiento;
+
+                    System.out.println("Tienes " + edad + " años.");
 
                     break;
 
@@ -213,7 +223,7 @@ public class interfaz {
                     System.out.println("Su número es: "+numaleatorio);
                     break;
 
-                case 8:
+                case 8: //CONTAR LETRAS HUGOAT
                     String texto = sc.nextLine(); //Lee una palabra introducida por el usuario
                     String[] palabras = texto.split(" "); //Salta los espacios para no contarlos como palabra
                     int numeroDePalabras = palabras.length; //Cuenta las palabras que hay
