@@ -25,6 +25,11 @@ public class main {
                 System.out.println("Al tirar un solo dado obtuviste: "+total);
                 break;
             case 2:
+                resultado1 = generador.nextInt(6) + 1;
+                resultado2 = generador.nextInt(6) + 1;
+                total = resultado1+resultado2;
+                System.out.println("El resultado del dado 1 ");
+                System.out.println("Al tirar un solo dado obtuviste: "+total);
 
                 break;
             case 3:
