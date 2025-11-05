@@ -214,12 +214,16 @@ public class interfaz {
                     break;
 
                 case 8:
-                    break;
+                    String texto = sc.nextLine(); //Lee una palabra introducida por el usuario
+                    String[] palabras = texto.split(" "); //Salta los espacios para no contarlos como palabra
+                    int numeroDePalabras = palabras.length; //Cuenta las palabras que hay
 
-                case 9:
-                    System.out.println("Nos vemos pronto!");
+                    if (numeroDePalabras == 1) {
+                        System.out.println("La palabra tiene " + numeroDePalabras + " palabra."); //Si solo hay una palabra imprime esto
+                    } else {
+                        System.out.println("La palabra tiene " + numeroDePalabras + " palabras."); //Si hay mas de una palabra imprime esto
+                    }
                     break;
-
             }
             System.out.println("Deseas usar otra herramienta? (si/no)");
             rpta =sc.next();
