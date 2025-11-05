@@ -110,7 +110,7 @@ public class interfaz {
 
                     break;
 
-                case 6:
+                case 6: //SIMULADOR DE DADOS LEM
                     Random generador = new Random(); //Importe la libreria de random porque permite generar
                     //numeros aleatorios y eso es lo que un dado hace.
                     System.out.println("Bienvenido al smiluador de dados");
@@ -196,7 +196,7 @@ public class interfaz {
                     System.out.println("Gracias por jugar!!");
                     break;
 
-                case 7:
+                case 7: //NUMEROS ALEATORIOS LEM
                     Random generador2 = new Random();
                     System.out.println("Bienvenido al generador de Números aleatorios");
                     System.out.println("Para poder jugar, debes escoger un rango, \na continuación ingresa el valor minimo y maximo que puede tomar el número ");
