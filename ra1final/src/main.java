@@ -10,10 +10,19 @@ public class main {
         System.out.println("Puedes usar 1 a 6 dados para jugar");
         System.out.println("Con cuantos quieres jugar?");
         int dados = sc.nextInt();
+        int resultado1;
+        int resultado2;
+        int resultado3;
+        int resultado4;
+        int resultado5;
+        int resultado6;
+        int total;
 
         switch (dados) {
             case 1:
-                i
+                resultado1 = generador.nextInt(6) + 1;
+                total = resultado1;
+                System.out.println("Al tirar un solo dado obtuviste: "+total);
                 break;
             case 2:
 
