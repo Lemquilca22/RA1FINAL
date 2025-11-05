@@ -15,13 +15,92 @@ public class interfaz {
             int opcion = sc.nextInt();
 
             switch (opcion) {
-                case 1:
+                case 1: //CALCULADORA CARLOS
+                    double num1, num2, resultado;
+                    char operacion;
+
+                    System.out.print("Ingresa el primner digito: ");
+                    num1 = sc.nextDouble();//Primera cifra de la operación
+
+                    System.out.print("Ingresa el segundo digito: ");
+                    num2 = sc.nextDouble();//Segunda cifra de la operación
+
+                    System.out.print("Elige una operación (+, -, *, /): ");
+                    operacion = sc.next().charAt(0);//Que operación hara
+
+                    switch (operacion) {
+                        case '+':
+                            resultado = num1 + num2;
+                            System.out.println(resultado);
+                            break;
+                        case '-':
+                            resultado = num1 - num2;
+                            System.out.println("Resultado: " + resultado);
+                            break;
+                        case '*':
+                            resultado = num1 * num2;
+                            System.out.println(resultado);
+                            break;
+                        case '/':
+                            if (num2 != 0) {
+                                resultado = num1 / num2;
+                                System.out.println(resultado);
+                            } else {
+                                System.out.println("Error: No se puede dividir entre cero.");
+                            }
+                            break;
+                        default:
+                            System.out.println("Operación no válida.");
+                    }
                     break;
 
-                case 2:
-                    break;
+                case 2: //CONVERSOR CARLOS
+                    Scanner grados = new Scanner(System.in);
+                    double gradosC, gradosF;
 
-                case 3:
+                    System.out.print("Ingresa los grados Celsius: ");
+                    gradosC = grados.nextDouble();
+                    gradosF = (gradosC * 9 / 5) + 32;
+                    System.out.println(gradosC + " En grados Celsius son " + gradosF + " grados Fahrenheit.");
+                    //de celsius a fahrenheit
+                    System.out.print("Ingresa los grados Fahrenheit: ");
+                    gradosF = grados.nextDouble();
+                    gradosC = (gradosF - 32) * 5 / 9;
+                    System.out.println(gradosF + " En  grados Fahrenheit son " + gradosC + " grados Celsius.");
+                    break;
+                    //de fahrenheit a celsius
+
+                case 3: //CLASIFICADOR CARLOS
+                    System.out.print("Introduce un número entero: ");
+                    int num = sc.nextInt();
+                    //Introduce el nuemro a classificar
+                    if (num > 0)
+                        System.out.println(num + " es positivo.");
+                    else if (num < 0)
+                        System.out.println(num + " es negativo.");
+                    else
+                        System.out.println("El número es cero.");
+                    //Comprobación de valores psotivos o negattivos o zero
+                    if (num % 2 == 0)
+                        System.out.println(num + " es par.");
+                    else
+                        System.out.println(num + " es impar.");
+                    //Comprobación de pares
+                    boolean primo = true;
+                    if (num < 2) primo = false;
+                    else {
+                        for (int i = 2; i <= num / 2; i++) {
+                            if (num % i == 0) {
+                                primo = false;
+                                break;
+                            }
+                        }
+                    }
+                    if (primo)
+                        System.out.println(num + " es primo.");
+                    else
+                        System.out.println(num + " no es primo.");
+                    //Classifica el numero como primo o no
                     break;
 
                 case 4:
@@ -126,12 +205,12 @@ public class interfaz {
                     System.out.println("Ingresa el valor máximo del numero:");
                     int max = sc.nextInt();
 
-                    int resultado = generador2.nextInt(max-min+1) + min;
+                    int numaleatorio = generador2.nextInt(max-min+1) + min;
                     //la razon por la cual sumo "min" a esta parte del codigo es, para que
                     //me genere numeros a partir del valor minimo; de otro modo, por ejemplo
                     //si mi numero min fuera 25 y el maximo 75, (sin la suma del min), los valores
                     //aleatorios serian del 0-50 y no del 25-75.
-                    System.out.println("Su número es: "+resultado);
+                    System.out.println("Su número es: "+numaleatorio);
                     break;
 
                 case 8:
@@ -144,8 +223,9 @@ public class interfaz {
             }
             System.out.println("Deseas usar otra herramienta? (si/no)");
             rpta =sc.next();
-            if (rpta.equals("no")) {
+            if (rpta.equalsIgnoreCase("no")) {
                 salir = false;
+                System.out.println("Gracias por participar");
             }
         } while (salir);
 
