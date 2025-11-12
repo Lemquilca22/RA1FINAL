@@ -7,7 +7,7 @@ public class interfaz {
         Scanner sc = new Scanner(System.in);
         boolean salir = true;
         String rpta;
-        do {
+        while (salir) {
             System.out.println("Este es la interfaz de herramientas multiples de DAM");
             System.out.println("Cual quieres usar ahora?");
             System.out.println("Estas son las opciones: ");
@@ -69,7 +69,7 @@ public class interfaz {
                     gradosC = (gradosF - 32) * 5 / 9;
                     System.out.println(gradosF + " En  grados Fahrenheit son " + gradosC + " grados Celsius.");
                     break;
-                    //de fahrenheit a celsius
+                //de fahrenheit a celsius
 
                 case 3: //CLASIFICADOR CARLOS
                     System.out.print("Introduce un número entero: ");
@@ -127,7 +127,7 @@ public class interfaz {
                     System.out.println("Puedes usar 1 a 6 dados para jugar");
                     System.out.println("Con cuantos dados quieres jugar?");
                     int dados = sc.nextInt();
-                    int resultado1, resultado2, resultado3, resultado4, resultado5, resultado6;
+                    int resultado1, resultado2, resultado3, resultado4, resultado5, resultado6; //preferí utilizar
                     int total;
 
                     switch (dados) {
@@ -241,7 +241,7 @@ public class interfaz {
                 salir = false;
                 System.out.println("Gracias por participar");
             }
-        } while (salir);
+        }
 
     }
 }
