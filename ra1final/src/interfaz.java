@@ -11,7 +11,7 @@ public class interfaz {
             System.out.println("Este es la interfaz de herramientas multiples de DAM");
             System.out.println("Cual quieres usar ahora?");
             System.out.println("Estas son las opciones: ");
-            System.out.println("1) Calculadora\n2) Conversor de temperatura\n3) Clasificador de numeros\n4) Calculador de edad\n5)\n6) Simulador de dados" +
+            System.out.println("1) Calculadora\n2) Conversor de temperatura\n3) Clasificador de numeros\n4) Calculador de edad\n5) Calcular edad\n6) Simulador de dados" +
                     "\n7) Generador de números aleatorios\n8) Contador de palabras y caracteres");
             int opcion = sc.nextInt();
 
@@ -224,15 +224,18 @@ public class interfaz {
                     System.out.println("Su número es: "+numaleatorio);
                     break;
 
+
                 case 8: //CONTAR LETRAS HUGOAT
+                    sc.nextLine();
+                    System.out.println("Ingresa una oración");
                     String texto = sc.nextLine(); //Lee una palabra introducida por el usuario
                     String[] palabras = texto.split(" "); //Salta los espacios para no contarlos como palabra
                     int numeroDePalabras = palabras.length; //Cuenta las palabras que hay
 
                     if (numeroDePalabras == 1) {
-                        System.out.println("La palabra tiene " + numeroDePalabras + " palabra."); //Si solo hay una palabra imprime esto
+                        System.out.println("La oración tiene " + numeroDePalabras + " palabra."); //Si solo hay una palabra imprime esto
                     } else {
-                        System.out.println("La palabra tiene " + numeroDePalabras + " palabras."); //Si hay mas de una palabra imprime esto
+                        System.out.println("La oración tiene " + numeroDePalabras + " palabras."); //Si hay mas de una palabra imprime esto
                     }
                     break;
             }
