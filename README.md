@@ -12,5 +12,7 @@ Classificador de numeros:Este programa deberas introducir la cifra que deseees y
 
 # Participantes:
 -Lem Quilca
+
 -Hugo Gonzalez
+
 -Carlos ruiz
