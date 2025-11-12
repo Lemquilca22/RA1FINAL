@@ -5,7 +5,7 @@ Nuestro codigo, es la la puesta en practica de todos los conocimientos aprendido
 ### Caracteristicas:
 1. Calculadora:Este programa lee los valores que establezaca el usuario y realiza una opeación para entregar un resultado.
 2. Conversor de temperatura:Este programa es un conversor de temperatura que bilateralmente dando ambas unidades.
-3. Calcular edad: Este progrma permite al usuario saber la edad mediante un aporte de información
+3. Calcular edad: Este programa permite al usuario saber la edad mediante un aporte de información
 4. Saludo Personalizado: El programa muestra un saludo personalizado junto al nombre que el usuario ha añadido.
 5. Clasificador de numeros:Este programa classifica los numeros introducidos en diferentes aspectos numericos.
 6. Simulador de dados: En base a la cantidad de dados seleccionados, el codigo mostrará los resultados de ellos y la suma total. 
