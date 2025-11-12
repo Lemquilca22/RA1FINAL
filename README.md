@@ -1,4 +1,11 @@
 # RA1FINAL
+### Participantes:
+-Lem Quilca
+
+-Hugo Gonzalez
+
+-Carlos ruiz
+
 ## Descripción: 
 Nuestro codigo, es la la puesta en practica de todos los conocimientos aprendidos durante la RA1, este codigo incluye 8 programas dentro de una interfaz principal que nos enseñará que podemos realizar. 
 
@@ -16,13 +23,8 @@ Nuestro codigo, es la la puesta en practica de todos los conocimientos aprendido
 2. Selecciona una de las opciones ingresando un valor entero entre (1-8)
 3. Al ingresar en el programa escogido, debes seguir las instrucciones que te da dicho programa.
 4. Antes de finalizar el programa preguntará si quieres utilizar otro programa o herramienta (SI/NO).
-5. Si ingresas (SI o si) volveras a la interfaz, en caso contrario (NO o no) 
+5. Si ingresas (SI o si) volveras a la interfaz, en caso contrario (NO o no) te agradecerá por haber participado.
 
 
 
-### Participantes:
--Lem Quilca
 
--Hugo Gonzalez
-
--Carlos ruiz
