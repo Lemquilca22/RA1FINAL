@@ -127,24 +127,25 @@ public class interfaz {
                     System.out.println("Puedes usar 1 a 6 dados para jugar");
                     System.out.println("Con cuantos dados quieres jugar?");
                     int dados = sc.nextInt();
-                    int resultado1, resultado2, resultado3, resultado4, resultado5, resultado6; //preferí utilizar
+                    int resultado1, resultado2, resultado3, resultado4, resultado5, resultado6;
                     int total;
 
-                    switch (dados) {
+                    switch (dados) { //El switch nos ayudará a ejecutar de acuerdo con una condición (si tenemos 1, 2, 3, 4 o 5 dados, etc).
                         case 1:
-                            resultado1 = generador.nextInt(6) + 1;
+                            resultado1 = generador.nextInt(6) + 1;//el generador nos lanzará un número del 1 al 6
                             total = resultado1;
-                            System.out.println("Al tirar un solo dado obtuviste: "+total);
+                            System.out.println("Al tirar un solo dado obtuviste: "+total);// imprime el numero generado.
                             break;
                         case 2:
                             resultado1 = generador.nextInt(6) + 1;
                             resultado2 = generador.nextInt(6) + 1;
-                            total = resultado1+resultado2;
+                            total = resultado1+resultado2; //cada numero generado se guarda en una varible diferente.
                             System.out.println("El resultado del dado 1 es: "+resultado1);
                             System.out.println("El resultado del dado 2 es: "+resultado2);
                             System.out.println("La suma total de los resultados obtenidos de los dados es: "+total);
 
                             break;
+                            //Los comentarios para los siguientes case son los mismos; lo unico que cambia es la cantidad de print y resultados obtenidos.
                         case 3:
                             resultado1 = generador.nextInt(6) + 1;
                             resultado2 = generador.nextInt(6) + 1;
